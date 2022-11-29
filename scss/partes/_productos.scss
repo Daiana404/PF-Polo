@@ -19,3 +19,12 @@
         text-shadow: 2px 2px 0 rgb(0, 0, 0);
     }
 }
+.box-productos--2cols{
+    grid-template-rows: $prodct-rows $prodct-rows;
+}
+.box-productos--3cols{
+    grid-template-rows: $prodct-rows $prodct-rows $prodct-rows;
+}
+.box-productos--4cols{
+    grid-template-rows: $prodct-rows $prodct-rows $prodct-rows $prodct-rows;
+}

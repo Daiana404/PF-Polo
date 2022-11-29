@@ -1,3 +1,5 @@
+$prodct-columns: 400px;
+$prodct-rows: 500px;
 .box-productos{/* 
     height: 600px; */
     margin: 30px 0 $padding-amplio 0;
@@ -5,8 +7,8 @@
 
     display: grid;
     
-    grid-template-columns: 400px 400px 400px 400px;
-    grid-template-rows: 500px;
+    grid-template-columns: $prodct-columns $prodct-columns $prodct-columns $prodct-columns;
+    grid-template-rows: $prodct-rows;
     column-gap: $gap;
     row-gap: $gap;
     justify-content: center;

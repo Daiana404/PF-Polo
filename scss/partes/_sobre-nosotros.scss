@@ -1,0 +1,88 @@
+.principal-contacto{
+    padding: 0 0 $padding-general 0;
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 300px 50px 300px;
+        grid-template-areas: "a1 a2"
+                             "a3 a4"
+                             "a5 a4";
+
+        justify-items: center ;
+        align-items: center;
+        text-align: center;
+
+        .contenido__enlaces-redes{
+            .tabla{
+                display: grid;
+                grid-template-columns: 20px 200px;
+                grid-template-rows: 20px;
+            
+                column-gap: 10px;
+                row-gap: 10px;
+                justify-items: self-start;
+                align-items: center;
+                color: white;
+                div{
+                    display: flex;
+                    justify-content: center;
+                    
+                    font-size: $letra-normal;
+                    font-weight: 200;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+                .contacto-icon{
+                    height: 20px;
+                    path{
+                        fill: white;
+                    }
+                }
+            }
+        }
+        .contenido__formulario{
+            #form{
+                input{
+                    padding: 5px 10px;
+                    width: 250px;
+                    margin-bottom: 5px;
+                    border: 1px solid rgb(112, 112, 112);
+                    font-size: 13px;
+                    border-radius: 10px;
+                }
+                #frm-msg{
+                    @extend input;
+                    resize: vertical;
+                    max-height: 150px;
+                }
+                #frm-submit{
+                    width: 100px;
+                    border-radius: 10px;    
+                
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .contenido__titulo-indicador--1{
+            grid-area: a1;
+            color: white;
+            text-transform: capitalize;
+        }
+        .contenido__titulo-indicador--2{
+            @extend .contenido__titulo-indicador--1;
+            grid-area: a2;
+        }
+
+        .contenido__mapa{
+            grid-area: a4;
+            width: 100%;
+            height: 100%;
+            #mapa{
+                border-radius: $border-radius;
+            }
+        }
+    }
+}

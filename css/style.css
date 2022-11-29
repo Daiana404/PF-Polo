@@ -249,6 +249,7 @@ body {
       align-items: center; }
       .secciones .secciones__grid #seccion-1 .productos-enlace p {
         color: white;
+        text-shadow: 2px 2px 0 #050505;
         font-size: calc(2em + 2vw);
         text-transform: uppercase;
         font-family: "Londrina Solid";
@@ -288,6 +289,7 @@ body {
       align-items: center; }
       .secciones .secciones__grid #seccion-2 .productos-enlace p {
         color: white;
+        text-shadow: 2px 2px 0 #050505;
         font-size: calc(2em + 2vw);
         text-transform: uppercase;
         font-family: "Londrina Solid";
@@ -327,6 +329,7 @@ body {
       align-items: center; }
       .secciones .secciones__grid #seccion-3 .productos-enlace p {
         color: white;
+        text-shadow: 2px 2px 0 #050505;
         font-size: calc(2em + 2vw);
         text-transform: uppercase;
         font-family: "Londrina Solid";
@@ -366,6 +369,7 @@ body {
       align-items: center; }
       .secciones .secciones__grid #seccion-4 .productos-enlace p {
         color: white;
+        text-shadow: 2px 2px 0 #050505;
         font-size: calc(2em + 2vw);
         text-transform: uppercase;
         font-family: "Londrina Solid";
@@ -473,3 +477,125 @@ body {
     font-size: calc(1rem + 2vw);
     color: white;
     text-shadow: 2px 2px 0 black; }
+
+.box-productos--2cols {
+  grid-template-rows: 500px 500px; }
+
+.box-productos--3cols {
+  grid-template-rows: 500px 500px 500px; }
+
+.box-productos--4cols {
+  grid-template-rows: 500px 500px 500px 500px; }
+
+.preguntas {
+  padding: 30px 0 150px 0; }
+  .preguntas .tarjetas {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 40px 40px 40px; }
+    .preguntas .tarjetas img {
+      width: 50px; }
+  .preguntas .card-header {
+    background-color: #22251e; }
+  .preguntas .card-titulo {
+    color: white; }
+
+.principal-contacto {
+  padding: 0 0 30px 0; }
+  .principal-contacto .contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 300px 50px 300px;
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a4";
+    justify-items: center;
+    align-items: center;
+    text-align: center; }
+    .principal-contacto .contenido .contenido__enlaces-redes .tabla {
+      display: grid;
+      grid-template-columns: 20px 200px;
+      grid-template-rows: 20px;
+      column-gap: 10px;
+      row-gap: 10px;
+      justify-items: self-start;
+      align-items: center;
+      color: white; }
+      .principal-contacto .contenido .contenido__enlaces-redes .tabla div {
+        display: flex;
+        justify-content: center;
+        font-size: calc(1em + 0.3vw);
+        font-weight: 200; }
+        .principal-contacto .contenido .contenido__enlaces-redes .tabla div a {
+          text-decoration: none;
+          color: white; }
+      .principal-contacto .contenido .contenido__enlaces-redes .tabla .contacto-icon {
+        height: 20px; }
+        .principal-contacto .contenido .contenido__enlaces-redes .tabla .contacto-icon path {
+          fill: white; }
+    .principal-contacto .contenido .contenido__formulario #form input, .principal-contacto .contenido .contenido__formulario #form #frm-msg {
+      padding: 5px 10px;
+      width: 250px;
+      margin-bottom: 5px;
+      border: 1px solid #707070;
+      font-size: 13px;
+      border-radius: 10px; }
+    .principal-contacto .contenido .contenido__formulario #form #frm-msg {
+      resize: vertical;
+      max-height: 150px; }
+    .principal-contacto .contenido .contenido__formulario #form #frm-submit {
+      width: 100px;
+      border-radius: 10px;
+      text-transform: uppercase; }
+    .principal-contacto .contenido .contenido__titulo-indicador--1, .principal-contacto .contenido .contenido__titulo-indicador--2 {
+      grid-area: a1;
+      color: white;
+      text-transform: capitalize; }
+    .principal-contacto .contenido .contenido__titulo-indicador--2 {
+      grid-area: a2; }
+    .principal-contacto .contenido .contenido__mapa {
+      grid-area: a4;
+      width: 100%;
+      height: 100%; }
+      .principal-contacto .contenido .contenido__mapa #mapa {
+        border-radius: 20px; }
+
+.cuidados__grid {
+  padding: 30px 0 150px 0;
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  /* 
+    grid-template-rows: $consejo-box-row $consejo-box-row; */
+  grid-template-areas: "a1 a2 a3" "a4 a5 a6" "a7 a8 a9";
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-content: center;
+  align-content: center; }
+  .cuidados__grid .cajita-consejo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+    box-sizing: content-box;
+    padding: 10px; }
+    .cuidados__grid .cajita-consejo .cajita-consejo__titulo {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      .cuidados__grid .cajita-consejo .cajita-consejo__titulo img {
+        width: 40px; }
+      .cuidados__grid .cajita-consejo .cajita-consejo__titulo h2 {
+        text-transform: capitalize;
+        margin: 0;
+        padding-left: 10px;
+        font-size: calc(1.5em + 0.3vw);
+        font-weight: 700; }
+    .cuidados__grid .cajita-consejo .cajita-consejo__msg {
+      margin: 10px;
+      background-color: #84a679;
+      border-radius: 20px;
+      padding: 10px;
+      color: white; }

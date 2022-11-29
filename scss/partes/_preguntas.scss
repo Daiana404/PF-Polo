@@ -1,0 +1,23 @@
+$grid-column: 80px;
+$grid-row: 40px;
+
+.preguntas{
+
+    padding: $padding-general 0 $padding-amplio 0;
+    .tarjetas{
+        
+        padding: $padding-general;
+        display: grid;
+        grid-template-columns: $grid-column $grid-column $grid-column $grid-column;
+        grid-template-rows: $grid-row $grid-row $grid-row;
+        img{
+            width: 50px;
+        }
+    }
+    .card-header{
+        background-color: $verde-0;
+    }
+    .card-titulo{
+        color: rgb(255, 255, 255);
+    }
+}
