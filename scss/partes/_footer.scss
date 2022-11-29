@@ -1,0 +1,89 @@
+.footer{/* 
+    height: 250px; */
+    width: 100%;
+    background-color: Black!important;
+    position: relative;
+    padding: 30px 0 20px 0;
+
+    .secciones-footer ul{
+        li{
+            @include flex(row, center, center);
+            a{
+                    color: white;
+                    font-size: $letra-normal;
+                    font-family: 'Amatic SC';
+                    text-decoration: none;
+            }
+        }
+        li:hover a{
+            color: $verde-3;
+        }
+    }
+
+    .footer-decoracion-top{
+        position: absolute;
+        height: 15%;
+        top: -14.5%;
+        width: 100%;
+        filter: brightness(0);
+    }    
+    .footer__logo{
+            @include flex(row, center, center);
+            p{
+                font-family: $Londrina;
+                font-size:calc(2em + 0.8vw);
+                color: white;
+            }
+    }
+    .pie__info{
+            @include flex(row, center, center);
+            
+            ul li{
+                
+                .iconos-pie{
+                    width: 20px;
+                    g{
+                        fill: white;
+                    }
+                }
+                a{
+                    @include flex(row, space-between, center);
+                    width: 100px;
+                    padding: 10px 0 10px 0;
+                    font-family: 'Amatic SC';
+                    text-decoration: none;
+                    color: white;
+                    font-size: $letra-normal
+                }
+            }
+            ul li:hover{
+                a{
+                    color: $verde-4;
+                }
+                svg path{
+                    fill: $verde-4; 
+                }
+                
+            }
+    }
+
+    .pie__creditos{
+
+        color: white;
+        text-align: center;
+        font-size: 0.7em;
+        font-weight: 200;
+        
+        text-transform: uppercase;
+        
+        p {
+            margin: 0;
+
+            padding: 5px 0 5px 0;
+            span{
+            text-transform: none;
+            font-style: italic;}
+        }
+
+    }
+}
