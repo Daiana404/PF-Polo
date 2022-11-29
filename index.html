@@ -10,8 +10,9 @@
     <link id="icon-hoja" rel="shortcut icon" href="../img/icon/hojas.svg" type="image/x-icon">
 
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bs-modi.css">
+    <link rel="stylesheet" href="./css/fondo.css">
 
     
   <!-- bootstrap -->
@@ -44,10 +45,11 @@
                   </a>
                   <div class="dropdown-menu after-scroll" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="./productos/terrarios.html">Terrarios</a>
+                    <a class="dropdown-item" href="./productos/suculentas.html">Suculentas</a>
                     <a class="dropdown-item" href="./productos/cactus.html">Cactus</a>
                     <a class="dropdown-item" href="./productos/macetas.html">Macetas</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./html/cuidados">Cuidados</a>
+                    <a class="dropdown-item" href="./productos/cuidados.html">Cuidados</a>
                   </div>
             </li>
             <li class="nav-item">
@@ -105,12 +107,12 @@
                       <div class="carousel-item active">
                         <div class="carousel-plantas">
                            <div class="carousel-img--planta">
-                            <img class="planta-img" src="./scss/img/planta-1.png" alt="">
+                            <img class="planta-img" src="./scss/img/busto-grecia.png" alt="">
                            </div>
                         </div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Filodendro</h5>
-                            <p> Es perfecta para decorar grandes espacios interiores donde le llegue suficiente luz natural pero no el sol directo que podría dañar las hojas.</p>
+                            <h5><a href="./productos/macetas.html">Macetas</a></h5>
+                            <p>Macetas super creativas hechas a mano, especialmente diseñadas para decorar todos los rincones de tu hogar</p>
                         </div>
                       </div>
                       <div class="carousel-item">
@@ -120,19 +122,19 @@
                                </div>
                         </div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Cactus</h5>
-                            <p>Estas especies no requieren de mucha atención y el espacio en el que crecen no requiere de características muy exigentes.</p>
+                            <h5><a href="./productos/suculentas.html">Cactus y Suculentas</a></h5>
+                            <p>Estas especies no requieren de mucha atención y el espacio en el que crecen no requiere de características muy exigentes. Son las mejores acompañantes para espacios pequeños.</p>
                         </div>
                       </div>
                        <div class="carousel-item">
                         <div class="carousel-plantas">
                             <div class="carousel-img--planta">
-                                <img class="planta-img" src="./scss/img/planta-3.png" alt="">
+                                <img class="planta-img" src="./scss/img/terrario.png" alt="">
                                </div>
                         </div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Zuculentas</h5>
-                            <p>Se encargan de purificar el ambiente y proveernos a los seres humanos de oxígeno, nitrógeno, entre otros elementos necesarios para vivir en este planeta; además regulan la humedad, evitan la erosión y suministran alimento.</p>
+                            <h5><a href="./productos/terrarios.html">Terrarios</a></h5>
+                            <p>Tener un terrario de plantas es una manera sencilla de disfrutar de la naturaleza si no tenemos espacio o, incluso y según las plantas que albergue, si les prestamos poca atención. Porque según su forma, los terrarios para plantas conservan la humedad ambiental que estas necesitan para vivir.</p>
                         </div>
                        </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -153,30 +155,36 @@
 
             <div class="secciones__grid">
                 <div id="seccion-1">
-                    <img src="./scss/img/fondo-cactus.jpg" alt="">
-                    <a class="productos-enlace" href="./cactus.html">
-                        cactus
+                    
+                    <a class="productos-enlace" href="./productos/cactus.html">
+                        <img src="./scss/img/fondo-cactus.jpg" alt="">
+                        <p>cactus</p>
                     </a>
                 </div>
 
                 <div id="seccion-2">
-                    <img src="./scss/img/fondo-zuculentas.jpg" alt="">
-                    <a class="productos-enlace" href="./zuculentas.html">
-                        zuculentas
+                    
+                    <a class="productos-enlace" href="./productos/suculentas.html">
+                        <img src="./scss/img/fondo-suculentas.jpg" alt="">
+                        <p>suculentas</p>
                     </a>
                 </div>
 
                 <div id="seccion-3">
-                    <img src="./scss/img/fondo-macetas.jpg" alt="">
-                    <a class="productos-enlace" href="./macetas.html">
-                        macetas
+                    
+                    <a class="productos-enlace" href="./productos/macetas.html">
+                        
+                        <img src="./scss/img/fondo-macetas.jpg" alt="">
+
+                        <p>macetas</p>
                     </a>
                 </div>
 
                 <div id="seccion-4">
-                    <img src="./scss/img/fondo-terrarios.jpg" alt="">
-                    <a class="productos-enlace" href="./terrarios.html">
-                        terrarios
+                    
+                    <a class="productos-enlace" href="./productos/terrarios.html">
+                        <img src="./scss/img/fondo-terrarios.jpg" alt="">
+                        <p>terrarios</p>
                     </a>
                 </div>
 
@@ -192,10 +200,10 @@
                 <div class="box">
                     <a class="producto__enlace" href="#">
                         <div class="box__img-producto">
-                            <img src="./scss/img/fondo-cactus.jpg" alt="">
+                            <img src="./scss/img/terrarios/terrario-11.jpg" alt="">
                         </div>
                         <h3 class="box__nombre-producto">
-                            plantita
+                            Dos martinis, por favor
                         </h3>
                         <p class="box__descrip-producto">
                             <span class="producto__precio">$3000</span> <br>
@@ -210,14 +218,14 @@
                 <div class="box">
                     <a class="producto__enlace"  href="#">
                         <div class="box__img-producto">
-                            <img src="./scss/img/fondo-cactus.jpg" alt="">
+                            <img src="./scss/img/suculentas/suculenta-3.jpg" alt="">
                         </div>
                         <h3 class="box__nombre-producto">
-                            plantita
+                            ojo de aemond targaryen
                         </h3>
                         <p class="box__descrip-producto">
-                            <span class="producto__precio">$3000</span> <br>
-                            <span>3</span> cuotas sin interés de <span>$1000</span>
+                            <span class="producto__precio">$8715</span> <br>
+                            <span>3</span> cuotas sin interés de <span>$2905</span>
                         </p>
                     </a>
                     <a class="producto__enlace-carrito" href="#">
@@ -227,14 +235,14 @@
                 <div class="box">
                     <a class="producto__enlace"  href="#">
                         <div class="box__img-producto">
-                            <img src="./scss/img/fondo-cactus.jpg" alt="">
+                            <img src="./scss/img/macetas/maceta-10.jpg" alt="">
                         </div>
                         <h3 class="box__nombre-producto">
-                            plantita
+                            Grecia moderna
                         </h3>
                         <p class="box__descrip-producto">
-                            <span class="producto__precio">$3000</span> <br>
-                            <span>3</span> cuotas sin interés de <span>$1000</span>
+                            <span class="producto__precio">$8520</span> <br>
+                            <span>3</span> cuotas sin interés de <span>$2840</span>
                         </p>
                     </a>
                     <a class="producto__enlace-carrito" href="#">
@@ -244,14 +252,14 @@
                 <div class="box">
                     <a class="producto__enlace"  href="#">
                         <div class="box__img-producto">
-                            <img src="./scss/img/fondo-cactus.jpg" alt="">
+                            <img src="./scss/img/macetas/maceta-1.webp" alt="">
                         </div>
                         <h3 class="box__nombre-producto">
-                            plantita
+                            cute axolote
                         </h3>
                         <p class="box__descrip-producto">
-                            <span class="producto__precio">$3000</span> <br>
-                            <span>3</span> cuotas sin interés de <span>$1000</span>
+                            <span class="producto__precio">$6500</span> <br>
+                            <span>3</span> cuotas sin interés de <span>$2166.67</span>
                         </p>
                     </a>
                     <a class="producto__enlace-carrito" href="#">
@@ -270,12 +278,12 @@
     <footer class="footer">
         <div class="secciones-footer"> <!-- todos los html que van a haber -->
             <ul>
-                <li><a href="../html/zuculentas.html">zuculentas</a></li>
-                <li><a href="../html/cactus.html">cactus</a></li>
-                <li><a href="../html/terrarios.html">terrarios</a></li>
-                <li><a href="../html/macetas.html">macetas</a></li>
-                <li><a href="../html/cuidados.html">cuidados</a></li>
-                <li><a href="../html/preguntas.html">preguntas frecuentes</a></li>
+                <li><a href="./productos/suculentas.html">suculentas</a></li>
+                <li><a href="./productos/cactus.html">cactus</a></li>
+                <li><a href="./productos/terrarios.html">terrarios</a></li>
+                <li><a href="./productos/macetas.html">macetas</a></li>
+                <li><a href="./productos/cuidados.html">cuidados</a></li>
+                <li><a href="#">preguntas frecuentes</a></li>
             </ul>
         </div>
 

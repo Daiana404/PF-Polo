@@ -60,7 +60,10 @@
     h5{
         font-size: $letra-subtitulo;
         font-family: $Londrina;
-        color: $verde-5;
+        a{
+            color: $verde-5;
+            text-decoration: none;
+        }
     }
     p{
         font-weight: 100;

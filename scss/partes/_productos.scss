@@ -1,0 +1,21 @@
+
+.encabezado-titulo{
+    padding: $padding-general;
+    text-align: center;
+    color: white;
+    
+    font-weight: 100;
+    p a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    p a:hover{
+        color: $verde-5;
+    }
+    h1{
+        font-family: $Londrina;
+        font-size: $letra-titulo;
+        color: white;
+        text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    }
+}
