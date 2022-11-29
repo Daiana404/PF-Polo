@@ -28,7 +28,7 @@ html {
   
   /* icono whatsapp */
 
-  .principal{
+  main{
     .icono-whatsapp{
         position: fixed;
         z-index: 3;
@@ -112,3 +112,5 @@ html {
     @import "./partes/preguntas";
     @import "./partes/sobre-nosotros";
     @import "./partes/cuidados";
+
+    @import "./media";

@@ -33,18 +33,18 @@ html {
   font-family: 'Rubik'; }
 
 /* icono whatsapp */
-.principal .icono-whatsapp {
+main .icono-whatsapp {
   position: fixed;
   z-index: 3;
   right: 3vh;
   bottom: 3vh;
   height: 40px;
   width: 40px; }
-  .principal .icono-whatsapp a img {
+  main .icono-whatsapp a img {
     height: 100%;
     width: 100%;
     transition: 500ms; }
-  .principal .icono-whatsapp a:hover img {
+  main .icono-whatsapp a:hover img {
     transform: scale(1.08, 1.08); }
 
 /* configuración para páginas que deben ser vistas en toda la pantalla */
@@ -65,7 +65,7 @@ body {
     font-family: "Londrina Solid";
     color: white;
     text-shadow: 2px 2px 0 #050505;
-    font-size: calc(1rem + 2vw);
+    font-size: calc(2rem + 2vw);
     text-transform: uppercase; }
   .principal .nosotros {
     padding-top: 25px;
@@ -167,15 +167,15 @@ body {
     z-index: 2; }
     .inicio .inicio__intro h1 {
       font-family: "Londrina Solid";
-      font-size: calc(2em + 3vw);
+      font-size: calc(5em + 0.6vw);
       -webkit-text-stroke: 2px white;
       color: transparent; }
     .inicio .inicio__intro h2 {
-      font-size: calc(0.2em + 0.6vw);
+      font-size: calc(0.5em + 0.6vw);
       font-weight: 500;
       color: white; }
     .inicio .inicio__intro p {
-      width: 400px;
+      max-width: 400px;
       font-weight: 100;
       font-size: calc(0.9em + 0.1vw);
       color: lightgray; }
@@ -205,6 +205,7 @@ body {
     align-items: center; }
     .carousel-plantas .carousel-img--planta img {
       width: 30vw;
+      min-width: 350px;
       animation: flotar 3s infinite;
       filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.63)); }
 
@@ -392,12 +393,10 @@ body {
       filter: brightness(0.5); }
 
 .box-productos {
-  /* 
-    height: 600px; */
   margin: 30px 0 150px 0;
   box-sizing: initial;
   display: grid;
-  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-columns: repeat(4, 400px);
   grid-template-rows: 500px;
   column-gap: 30px;
   row-gap: 30px;
@@ -428,14 +427,16 @@ body {
         padding: 15px 0 0 0;
         margin-left: 20px;
         font-weight: 700;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        font-size: calc(1em + 0.5vw); }
       .box-productos .box .producto__enlace .box__descrip-producto {
         margin-left: 20px;
-        color: green; }
+        color: green;
+        font-size: calc(0.8em + 0.5vw); }
         .box-productos .box .producto__enlace .box__descrip-producto span {
           font-weight: 600; }
         .box-productos .box .producto__enlace .box__descrip-producto .producto__precio {
-          font-size: calc(1em + 0.3vw);
+          font-size: calc(1em + 0.5vw);
           color: black; }
     .box-productos .box .producto__enlace:hover .box__img-producto img {
       filter: brightness(0.8); }
@@ -474,18 +475,18 @@ body {
     color: #81be4d; }
   .encabezado-titulo h1 {
     font-family: "Londrina Solid";
-    font-size: calc(1rem + 2vw);
+    font-size: calc(2rem + 2vw);
     color: white;
     text-shadow: 2px 2px 0 black; }
 
-.box-productos--2cols {
-  grid-template-rows: 500px 500px; }
+.box-productos--2rows {
+  grid-template-rows: repeat(2, 500px); }
 
-.box-productos--3cols {
-  grid-template-rows: 500px 500px 500px; }
+.box-productos--3rows {
+  grid-template-rows: repeat(3, 500px); }
 
-.box-productos--4cols {
-  grid-template-rows: 500px 500px 500px 500px; }
+.box-productos--4rows {
+  grid-template-rows: repeat(4, 500px); }
 
 .preguntas {
   padding: 30px 0 150px 0; }
@@ -499,7 +500,17 @@ body {
   .preguntas .card-header {
     background-color: #22251e; }
   .preguntas .card-titulo {
-    color: white; }
+    margin: 0;
+    color: white;
+    font-size: calc(0.8em + 0.5vw);
+    text-align: left; }
+  .preguntas .card-titulo {
+    max-width: 390px;
+    color: white;
+    font-size: calc(0.8em + 0.5vw);
+    text-align: left; }
+  .preguntas .card-body {
+    font-size: calc(0.8em + 0.5vw); }
 
 .principal-contacto {
   padding: 0 0 30px 0; }
@@ -562,10 +573,11 @@ body {
 .cuidados__grid {
   padding: 30px 0 150px 0;
   display: grid;
-  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-columns: repeat(4, 400px);
   /* 
     grid-template-rows: $consejo-box-row $consejo-box-row; */
-  grid-template-areas: "a1 a2 a3" "a4 a5 a6" "a7 a8 a9";
+  /* grid-template-areas: "a1 a2 a3 a4"
+                         "a5 a6 a7 a8"; */
   row-gap: 30px;
   column-gap: 30px;
   justify-content: center;
@@ -598,4 +610,110 @@ body {
       background-color: #84a679;
       border-radius: 20px;
       padding: 10px;
-      color: white; }
+      color: white;
+      font-size: calc(0.8em + 0.3vw); }
+
+@media only screen and (max-width: 1600px) {
+  /* productos destacados, index */
+  #destacados .box-productos {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 450px);
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 15px; }
+  /* productos, resto de los html */
+  .principal-productos .box-productos {
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(4, 450px);
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 15px; }
+  /* contacto */
+  .principal-contacto .contenido .contenido__mapa #mapa {
+    width: 480px;
+    height: 500px; }
+  /* cuidados */
+  .principal-cuidados .cuidados__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 500px);
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media only screen and (max-width: 700px) {
+  main .icono-whatsapp {
+    right: 10px;
+    bottom: 10px; }
+    main .icono-whatsapp a img {
+      width: 35px;
+      height: 35px; }
+  /* productos destacados, index */
+  #destacados .box-productos {
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(4, 450px);
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 15px; }
+  /* productos, resto de los html */
+  .principal-productos .box-productos {
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(8, 450px);
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 15px; }
+  /* secciones de los productos, index */
+  #productos .secciones__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: "a1" "a2" "a3" "a4";
+    padding: 15px;
+    padding-top: calc(50px + 20px);
+    column-gap: 15px;
+    row-gap: 15px; }
+  /* contacto */
+  .principal-contacto .contenido {
+    margin-bottom: 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px .5fr .5fr 50px 1fr;
+    grid-template-areas: "a1" "a3" "a5" "a2" "a4";
+    row-gap: 20px; }
+    .principal-contacto .contenido .contenido__mapa #mapa {
+      width: 450px;
+      height: 550px; }
+  /* cuidados */
+  .principal-cuidados .cuidados__grid {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media only screen and (max-width: 440px) {
+  main .icono-whatsapp {
+    right: 3px;
+    bottom: 3px; }
+    main .icono-whatsapp a img {
+      height: 25px;
+      width: 25px; }
+  /* productos destacados, index */
+  #destacados .box-productos {
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(4, 350px);
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 15px; }
+  /* productos, resto de html */
+  .principal-productos .box-productos {
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(8, 350px); }
+  /* contacto */
+  .principal-contacto .contenido {
+    margin-bottom: 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px .5fr .5fr 50px 1fr;
+    grid-template-areas: "a1" "a3" "a5" "a2" "a4";
+    row-gap: 25px; }
+    .principal-contacto .contenido .contenido__mapa #mapa {
+      width: 340px;
+      height: 400px; }
+  /* cuidados */
+  .principal-cuidados .cuidados__grid {
+    grid-template-columns: 300px; } }

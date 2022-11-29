@@ -9,17 +9,17 @@
         z-index: 2;
         h1{
             font-family: $Londrina;
-            font-size: calc(2em + 3vw);
+            font-size: calc(5em + 0.6vw);
             -webkit-text-stroke: 2px white;
             color: transparent; 
         }
         h2{
-            font-size: calc(0.2em + 0.6vw);
+            font-size: calc(0.5em + 0.6vw);
             font-weight: 500;
             color: white;
         }
         p{
-            width: 400px;
+            max-width: 400px;
             font-weight: 100;
             font-size: $letra-peque;
             color: $gris;
@@ -50,6 +50,7 @@
 
         img{
             width: 30vw;
+            min-width: 350px;
             animation: flotar 3s infinite;
             filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.63));
         }

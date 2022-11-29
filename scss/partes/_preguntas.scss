@@ -18,6 +18,20 @@ $grid-row: 40px;
         background-color: $verde-0;
     }
     .card-titulo{
+        margin: 0;
         color: rgb(255, 255, 255);
+        font-size: calc(0.8em + 0.5vw);
+        text-align: left;
+    }
+    
+    .card-titulo{
+        max-width: 390px;
+        color: rgb(255, 255, 255);
+        font-size: calc(0.8em + 0.5vw);
+        text-align: left;
+    }
+    
+    .card-body{
+        font-size: calc(0.8em + 0.5vw);
     }
 }

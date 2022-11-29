@@ -1,13 +1,12 @@
-$prodct-columns: 400px;
+
 $prodct-rows: 500px;
-.box-productos{/* 
-    height: 600px; */
+.box-productos{
     margin: 30px 0 $padding-amplio 0;
     box-sizing: initial;
 
     display: grid;
     
-    grid-template-columns: $prodct-columns $prodct-columns $prodct-columns $prodct-columns;
+    grid-template-columns: repeat(4, 400px);
     grid-template-rows: $prodct-rows;
     column-gap: $gap;
     row-gap: $gap;
@@ -47,15 +46,17 @@ $prodct-rows: 500px;
                 margin-left: 20px;
                 font-weight: 700;
                 text-transform: capitalize;
+                font-size: calc(1em + 0.5vw);
             }
             .box__descrip-producto{
                 margin-left: 20px;
                 color: green;
+                font-size: calc(0.8em + 0.5vw);
                 span{
                     font-weight: 600;
                 }
                 .producto__precio{
-                    font-size: $letra-normal;
+                    font-size: calc(1em + 0.5vw);
                     color: black;
                 }
 
@@ -84,8 +85,7 @@ $prodct-rows: 500px;
                 
                 @include flex(row, center, center);
             svg{
-                
-            transition: $time-transition;
+                transition: $time-transition;
                 height: 35px;
                 width: 35px;
                 .relleno{
